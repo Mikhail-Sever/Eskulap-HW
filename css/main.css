@@ -1,0 +1,64 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+header {
+  padding-top: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header nav {
+  cursor: pointer;
+}
+header nav .btn-gamburger {
+  float: right;
+  width: 45px;
+  padding: 4px;
+  border-radius: 5px;
+}
+header nav .btn-gamburger span {
+  display: block;
+  background: #fff;
+  width: 25px;
+  height: 2px;
+  margin: 6px;
+}
+header nav:hover {
+  background: #194277;
+}
+.welcome {
+  background: url("../img/welcome.jpg") no-repeat center top;
+  min-height: 870px;
+}
+.welcome h1 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+}
+.welcome p {
+  color: #fff;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+.wrap-container {
+  padding-top: 170px;
+}
+.flexclass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
