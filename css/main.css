@@ -9,6 +9,39 @@ p {
 html {
   font-size: 16px;
 }
+.cook-top {
+  width: 100%;
+  background: #194277;
+  align-items: baseline;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.cook-top .box {
+  margin: 0 10px;
+}
+.cook-top .box p {
+  color: #fff;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.button-accept {
+  color: #194277;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  border-radius: 15px;
+  background: #fff;
+  padding: 8px 35px;
+  border: none;
+  cursor: pointer;
+}
+.button-accept:hover {
+  opacity: 0.8;
+}
 header {
   padding-top: 90px;
   position: absolute;
@@ -173,11 +206,73 @@ a {
 .latest-works ul {
   padding: 0;
   list-style: none;
+  margin-bottom: 100px;
 }
 .latest-works ul li {
-  margin: 10px;
   margin: 10px auto;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.latest-works ul li a {
+  margin-bottom: 50px;
+}
+/*Clients section*/
+.clients {
+  background-color: #f1f8ff;
+}
+.clients h2 {
+  color: #3677fd;
+  font-family: Lato;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 35px;
+  text-align: center;
+  padding: 90px 0 75px 0;
+}
+.clients ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.clients ul li {
+  padding-bottom: 100px;
+}
+.footer {
+  background: url("../img/welcome.jpg") no-repeat center;
+  background-size: cover;
+}
+.footer .btn {
+  color: #3695ff;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 28px;
+  padding: 11px 65px;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+.footer-content h2 {
+  text-align: center;
+  color: #fff;
+  font-family: Lato;
+  font-size: 50px;
+  line-height: 65px;
+  font-weight: 300;
+  padding: 30px;
+}
+.footer-content h2 span {
+  font-weight: 700;
 }
