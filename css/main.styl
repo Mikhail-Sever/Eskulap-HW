@@ -45,23 +45,24 @@ header
   left 0
   right 0
   nav
-    cursor pointer
     .btn-gamburger
-      float right
-      width 45px
-      padding 4px
-      border-radius 5px
-      cursor pointer
+      float: right;
+      width: 45px;
+      padding: 4px;
+      border-radius: 5px;
+      cursor: pointer;
+      position: relative;
+      z-index: 5;
+      &:hover
+        opacity 0.2
+
       span
-        z-index: 1
-        position: relative
         display block
         background #fff
         width 25px
         height 3px
         margin 4px
-        &:hover
-          background #194277
+
 .welcome
   background url("../img/welcome.jpg") no-repeat center top
   background-size cover
@@ -131,12 +132,13 @@ header
   .welcome
     height 1325px*/
 .arrow-down
-  position absolute
-  bottom 0
+  position: absolute;
+  bottom: 20px;
   left: 50%;
   right: 50%;
   &:hover
-    margin 0px 0 30px 0
+    margin 0px 0 -20px 0
+    transition all .8s
 
 .wrap
   h3
@@ -178,8 +180,12 @@ header
         line-height: 35px
 .list-expert
   list-style none
-a
-  text-decoration none
+  a
+    /*text-decoration none*/
+    text-transform: uppercase;
+    color: #3677fd;
+    font-size: 24px;
+    font-weight: 700;
 
 
 /*latest works section*/

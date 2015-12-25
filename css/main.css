@@ -50,27 +50,24 @@ header {
   left: 0;
   right: 0;
 }
-header nav {
-  cursor: pointer;
-}
 header nav .btn-gamburger {
   float: right;
   width: 45px;
   padding: 4px;
   border-radius: 5px;
   cursor: pointer;
+  position: relative;
+  z-index: 5;
+}
+header nav .btn-gamburger:hover {
+  opacity: 0.2;
 }
 header nav .btn-gamburger span {
-  z-index: 1;
-  position: relative;
   display: block;
   background: #fff;
   width: 25px;
   height: 3px;
   margin: 4px;
-}
-header nav .btn-gamburger span:hover {
-  background: #194277;
 }
 .welcome {
   background: url("../img/welcome.jpg") no-repeat center top;
@@ -148,12 +145,13 @@ header nav .btn-gamburger span:hover {
     height 1325px*/
 .arrow-down {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   left: 50%;
   right: 50%;
 }
 .arrow-down:hover {
-  margin: 0px 0 30px 0;
+  margin: 0px 0 -20px 0;
+  transition: all 0.8s;
 }
 .wrap h3 {
   color: #3677fd;
@@ -200,8 +198,12 @@ header nav .btn-gamburger span:hover {
 .list-expert {
   list-style: none;
 }
-a {
-  text-decoration: none;
+.list-expert a {
+/*text-decoration none*/
+  text-transform: uppercase;
+  color: #3677fd;
+  font-size: 24px;
+  font-weight: 700;
 }
 /*latest works section*/
 .latest-works h3 {
